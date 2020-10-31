@@ -6,11 +6,21 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { TravelComponent } from './travel/travel.component';
+import { AboutComponent } from './about/about.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const routes: Routes = [
+  {path: 'price', component:TravelComponent},
+  {path: 'about', component:AboutComponent}
+];
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TravelComponent
+    TravelComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
